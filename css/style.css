@@ -1,0 +1,172 @@
+body {
+    margin:0;
+    padding:0;
+  }
+html{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    overflow: scroll;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-right:none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #090a0f;
+    font-family: 'Poppins', sans-serif;
+    opacity: 1;
+    z-index: 99;
+}
+.logo{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 22px;
+}
+.nav-Links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+.nav-Links li{
+    list-style: none;
+  }
+.nav-Links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+  }
+.burger{
+    display: none;
+    cursor: pointer;
+  } 
+.burger div{
+    color: white;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1024px){
+    .nav-Links{
+      width:60%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-Links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #090a0f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-Links li{
+        opacity:  0;
+    }
+.burger{
+    display: block;
+}
+}
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line3{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  
+  .Toronto-wrapper {
+    background: white;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .Toronto-wrapper > p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .Toronto{
+    display: block;
+    margin: auto;
+  }
+  
+  .box1{
+    background: black;
+    display: block;
+    margin: auto;
+  }
+  
+  .Meeting{
+  display: block;
+  margin: auto;
+  }
+  
+  .box2{
+    background: black;
+    display: block;
+    margin: auto;
+  }
+  
+  .News{
+    display: block;
+    margin: auto;
+  }
+  
+  .box3{
+    background: black;
+    display: block;
+    margin: auto;
+  }
+  
+  h1{
+    color:white;
+  }
+  
+  .footer{
+    display: block;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #090a0f;
+    font-family: 'Poppins', sans-serif;
+    opacity: 1;
+    z-index: 99;
+    color: white;
+  }
