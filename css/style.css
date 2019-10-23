@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 30%;
-  }
+}
 .nav-Links li{
     list-style: none;
   }
@@ -78,35 +78,33 @@ nav{
     .nav-Links li{
         opacity:  0;
     }
-.burger{
-    display: block;
+    .burger{
+        display: block;
+    }
 }
-}
-  .nav-active{
+.nav-active{
     transform: translateX(0%);
-  }
-  @keyframes navLinkFade{
+}
+@keyframes navLinkFade{
     from{
-      opacity: 0;
-      transform: translateX(50px);
+        opacity: 0;
+        transform: translateX(50px);
     }
     to{
       opacity: 1;
       transform: translateX(0px);
     }
   }
-  
-  .toggle .line1{
+.toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
-  }
-  .toggle .line2{
+}
+.toggle .line2{
     transform: rotate(-45deg) translate(-5px,6px);
-  }
-  .toggle .line3{
+}
+.toggle .line3{
     transform: rotate(-45deg) translate(-5px,6px);
-  }
-  
-  .Toronto-wrapper {
+}
+.Toronto-wrapper {
     background: white;
     padding: 5px;
     -webkit-border-radius: 4px;
@@ -115,50 +113,43 @@ nav{
     color: #fff;
     margin: 0 auto;
     width: 50%;
-  }
-  .Toronto-wrapper > p {
+}
+.Toronto-wrapper > p {
     display: inline-block;
     vertical-align: middle;
-  }
-  
-  .Toronto{
+}
+.Toronto{
     display: block;
     margin: auto;
-  }
-  
-  .box1{
+}
+.box1{
     background: black;
     display: block;
     margin: auto;
-  }
-  
-  .Meeting{
+}  
+.Meeting{
   display: block;
   margin: auto;
-  }
-  
-  .box2{
+} 
+.box2{
     background: black;
     display: block;
     margin: auto;
-  }
-  
-  .News{
+}
+.News{
     display: block;
     margin: auto;
-  }
-  
-  .box3{
+}  
+.box3{
     background: black;
     display: block;
     margin: auto;
-  }
-  
-  h1{
+}
+h1{
     color:white;
-  }
+}
   
-  .footer{
+.footer{
     display: block;
     margin: auto;
     justify-content: space-around;
@@ -169,4 +160,4 @@ nav{
     opacity: 1;
     z-index: 99;
     color: white;
-  }
+}
